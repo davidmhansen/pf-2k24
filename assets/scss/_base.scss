@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "NMMedium", sans-serif;
+  font-size: calc(100vw / 1440 * 10);
+
+  @media (max-width: 768px) {
+    font-size: calc(100vw / 375 * 10);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+._container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 16rem;
+  margin-bottom: 24rem;
+}

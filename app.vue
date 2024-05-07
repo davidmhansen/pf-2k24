@@ -1,5 +1,9 @@
+<style lang="scss">
+@use "~/assets/scss/main.scss";
+</style>
+
 <template>
-  <div>
-    <NuxtWelcome />
-  </div>
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
 </template>
