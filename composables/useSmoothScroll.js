@@ -5,9 +5,16 @@ export const useSmoothScroll = () => {
     duration: 1.2,
   });
 
-  gsap.ticker.add((time) => {
-    lenis.raf(time * 1000);
-  });
+  // gsap.ticker.add((time) => {
+  //   lenis.raf(time * 1000);
+  // });
 
-  gsap.ticker.lagSmoothing(0);
+  // gsap.ticker.lagSmoothing(0);
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
 };

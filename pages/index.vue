@@ -1,4 +1,8 @@
-<script>
+<script setup>
+definePageMeta({
+    title: 'Some Page',
+    description: 'Lorem ipsum dolor'
+})
 </script>
 
 <template>

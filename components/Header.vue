@@ -19,9 +19,9 @@ const links = [
             <NuxtLink class="logo" href="/">David Lehmann</NuxtLink>
             <span>Web Designer & Creative Developer</span>
         </div>
-        <nav>
-            <ul>
-                <li v-for="link in links" :key="link.title">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li v-for="link in links" :key="link.title" class="nav__list_item">
                     <NuxtLink :to="link.href">{{link.title}}</NuxtLink>    
                 </li>
             </ul>
@@ -38,6 +38,8 @@ const links = [
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: $color-white;
+    mix-blend-mode: difference;
 
     .header__info-wrapper {
         display: flex;
@@ -45,6 +47,15 @@ const links = [
 
         .logo {
             margin-bottom: .25rem;
+        }
+    }
+
+    .nav {
+        text-transform: capitalize;
+
+        .nav__list {
+            display: flex;
+            gap: 2rem;
         }
     }
 }

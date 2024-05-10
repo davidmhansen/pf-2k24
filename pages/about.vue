@@ -1,5 +1,8 @@
 <script>
-
+definePageMeta({
+    title: 'About Page',
+    description: 'Lorem ipsum'
+})
 </script>
 
 <template>

@@ -5,15 +5,6 @@ export default defineNuxtConfig({
   devServer: {
     port: 8000,
   },
-  vite: {
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: '@use "~/assets/scss/utils.scss" as *;',
-        },
-      },
-    },
-  },
   imports: {
     dirs: ["utils"],
   },
